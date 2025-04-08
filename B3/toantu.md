@@ -43,7 +43,7 @@ b += 20; // b = b + 20 => 30
     ```
 - `===`: so sánh nghiêm ngặt (strict mode) (**Kiểm tra cả giá trị và kiểu dữ liệu**)
     ```js
-    1 === "1"; // false (do 2 vế không cùng kiểu dữ liệuliệu)
+    1 === "1"; // false (do 2 vế không cùng kiểu dữ liệu)
     ```
 
 # Toán tử logic
@@ -66,6 +66,7 @@ if (!"") {
     console.log("String không rỗng!");
 }
 ```
+
 # Truly and Falsy
 - 6 giá trị khi **chuyển kiểu về boolean** sẽ trả về `false`:
     1. `0` (số 0)
@@ -77,4 +78,18 @@ if (!"") {
 - **Còn lại đều trả về `true`** khi chuyển kiểu dữ liệu thành boolean
 ```js
 [] == true; // true (chuỗi rỗng vẫn là true)
+```
+
+
+# Toán tử 3 ngôi
+- **LƯU Ý**: chỉ sử dụng trong 1 câu lệnh if - else
+- điều kiện ? giá trị nếu đúng : giá trị nếu sai
+```js
+let x = "";
+if (x == "")
+    console.log("x rỗng!")
+ else 
+    console.log("x không rỗng!")
+
+console.log(x == "" ? "x rỗng!" : "x không rỗng!");
 ```
